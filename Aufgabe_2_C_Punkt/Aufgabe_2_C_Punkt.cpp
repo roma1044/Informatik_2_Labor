@@ -6,8 +6,8 @@
 int main()
 {
 
-    std::cout << "Hello manuel World!\n Master änderung 2 4";
- master
+    std::cout << "Hello manuel World!\n Dies ist eine Aenderung ";
+
     int i = 3;
 
 }
