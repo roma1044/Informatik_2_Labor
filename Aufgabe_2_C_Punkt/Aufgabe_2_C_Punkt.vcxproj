@@ -139,7 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Aufgabe_2_C_Punkt.cpp" />
+    <ClCompile Include="CMain.cpp" />
+    <ClCompile Include="CPunkt.cpp" />
+    <ClCompile Include="CRechteck.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPunkt.h" />
+    <ClInclude Include="CRechteck.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
