@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "Hello manuel World!\n Dies ist eine Aenderung";
+    std::cout << "Hello manuel World!\n Dies ist eine Aenderung ";
     int i = 3;
 
 }
