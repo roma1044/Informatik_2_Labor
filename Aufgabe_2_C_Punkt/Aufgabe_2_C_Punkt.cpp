@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "Hello master World!\n";
+    std::cout << "Hello manuel World!\n";
 }
 
 // Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
