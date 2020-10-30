@@ -17,7 +17,30 @@ CRechteck::CRechteck( CPunkt& A, CPunkt& B)		// Weist PA (erster Referenzpunkt) 
 	}
 }
 
+unsigned int CRechteck::getFlaeche()
+{
+	int a = PB.get_x() - PA.get_x();     // Länge der Seiten berechen
+	int b = PB.get_y() - PA.get_y();
+
+	return(a*b);		// Produkt der Seiten des Rechtecks
+}
+
 int CRechteck::getXmin()	// gibt kleinste x - Koordinate (von PA) zurück.
 {
 	return PA.get_x();
+}
+
+int CRechteck::getYmin()
+{
+	return PA.get_y();
+}
+
+int CRechteck::getXmax()
+{
+	return PB.get_x();
+}
+
+int CRechteck::getYmax()
+{
+	return PB.get_y();
 }

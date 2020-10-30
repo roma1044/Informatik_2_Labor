@@ -11,7 +11,7 @@ public:
 	// fehlt: Standardkonstruktor mit Initialisierungsliste
 	CRechteck(CPunkt& A, CPunkt& B);
 	//~CRechteck(); //Destruktor
-	double getFlaeche();
+	unsigned int getFlaeche();
 	
 	int getXmin();
 	int getYmin();
