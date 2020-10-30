@@ -32,5 +32,8 @@
     <ClInclude Include="CPunkt.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

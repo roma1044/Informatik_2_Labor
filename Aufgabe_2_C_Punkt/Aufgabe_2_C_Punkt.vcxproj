@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="CPunkt.h" />
     <ClInclude Include="CRechteck.h" />
+    <ClInclude Include="Global.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
