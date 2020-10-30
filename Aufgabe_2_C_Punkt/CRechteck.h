@@ -8,7 +8,7 @@
 class CRechteck
 {
 public:
-	// fehlt: Standardkonstruktor mit Initialisierungsliste
+	CRechteck();
 	CRechteck(CPunkt& A, CPunkt& B);
 	//~CRechteck(); //Destruktor
 	unsigned int getFlaeche();
