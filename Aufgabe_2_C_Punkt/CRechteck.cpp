@@ -1,6 +1,7 @@
 #include "CRechteck.h"
 // Autor: Manuel Rothas
 //Datum: 29.10.2020
+//Implementierung der Methoden der Klasse CRechteck.
 
 CRechteck::CRechteck( CPunkt& A, CPunkt& B)		// Weist PA (erster Referenzpunkt) die Niedrigsten Koordinatenwerte zu und PB (zweiter Referenzpunkt) die größten 
 {

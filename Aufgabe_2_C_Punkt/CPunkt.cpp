@@ -1,5 +1,6 @@
 // Autor: Manuel Rothas
 //Datum: 29.10.2020
+// Implementierung der Methoden der Klasse CPunkt.
 
 #include "CPunkt.h"
 

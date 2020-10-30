@@ -1,5 +1,7 @@
 // Autor: Manuel Rothas
 //Datum: 29.10.2020
+// Beschriebung:
+// Einlesen der Koordinaten für 2 Rechtecke und Prüfung auf Überlappung.
 #include "CPunkt.h"
 #include "CRechteck.h"
 #include <iostream>
