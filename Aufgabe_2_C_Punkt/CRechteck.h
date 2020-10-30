@@ -1,18 +1,23 @@
-// Autor: Manuel Rothas
+//Autor: Manuel Rothas
 //Datum: 29.10.2020
+//Beschreibung:
+// Deklaration der Klasse CRechteck. Sie repräsentiert ein Rechteck parallel zum
+//Achsenkreuz mit zwei Referenzpunkten mit Hilfe der Klasse CPunkt.
 #pragma once
 #include "CPunkt.h"
 class CRechteck
 {
 public:
-	CRechteck(const CPunkt& A, const CPunkt& B);
+	// fehlt: Standardkonstruktor mit Initialisierungsliste
+	CRechteck(CPunkt& A, CPunkt& B);
+	//~CRechteck(); //Destruktor
 	double getFlaeche();
-	~CRechteck();
-	double getXmin();
-	double getYmin();
-	double getXmax();
-	double getYmax();
+	
+	int getXmin();
+	int getYmin();
+	int getXmax();
+	int getYmax();
 private:
-	CPunkt mA, mB;
+	CPunkt PA, PB;
 };
 

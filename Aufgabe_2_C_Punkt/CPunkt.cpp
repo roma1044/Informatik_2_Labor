@@ -3,6 +3,12 @@
 
 #include "CPunkt.h"
 
+CPunkt::CPunkt()
+{
+	x = 0;
+	y = 0;
+}
+
 CPunkt::CPunkt(int _x, int _y) :x(0), y(0) // Konstruktor und Initialisierung der Attribute mittels einer Initioalisierungsliste
 {
 	x = _x;

@@ -13,8 +13,8 @@
 class CPunkt
 {
 public:
-	CPunkt(int _x, int _y);
-	// Destruktor
+	CPunkt();
+	CPunkt(int _x, int _y);						// Destruktor
 	int get_x();
 	int get_y();
 	bool set_x(int _x);
