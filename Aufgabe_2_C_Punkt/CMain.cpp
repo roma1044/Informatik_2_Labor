@@ -37,6 +37,7 @@ int main()
 		cin >> tmp;
 		cout << endl;
 		P2.set_y(tmp);
+		// Zuweisung der CRechteck - Pointer mit einem Rechteck Objekt, Initialisieren mit den Eingelesenen Punkten
 		if (i + 1 == 1)   // Beim ersten durchgang Zeiger mit dem Ersten Rechteck und P1, P2 initialisieren
 			pR1 = new CRechteck(P1, P2);
 		if (i + 1 == 2)
@@ -51,7 +52,10 @@ int main()
 	cout << "pruefeUeberlappung(R1, R2) = " << pruefeUeberlappung(*pR1, *pR2) << endl;
 	cout << "pruefeUeberlappung(R2, R1) = " << pruefeUeberlappung(*pR1, *pR2) << endl;
 
-	
+	//Konsolenfenster offen halten
+	getchar();
+	getchar();
+
 }
 
 bool pruefeUeberlappung(CRechteck& RA, CRechteck& RB)
