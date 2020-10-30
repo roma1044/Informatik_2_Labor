@@ -4,6 +4,8 @@
 #include "CRechteck.h"
 #include <iostream>
 using namespace std;
+
+bool pruefeUeberlappung(CRechteck& RA, CRechteck& RB);
 int main()
 {
 	CPunkt P1(0,0);
@@ -42,6 +44,21 @@ int main()
 	cout << "------------------------" << endl << endl;
 	cout << "R1 = [ ( " << pR1->getXmin() << ", " << pR1->getYmin() << "), ( " << pR1->getXmax() << ", " << pR1->getYmax() << ") ], A(R1) =" << pR1->getFlaeche() << endl;
 	cout << "R2 = [ ( " << pR2->getXmin() << ", " << pR2->getYmin() << "), ( " << pR2->getXmax() << ", " << pR2->getYmax() << ") ], A(R2) =" << pR2->getFlaeche() << endl;
+	cout << endl;
+	// Die Prüfung auf Überlappung soll Kommutativ sein
+	cout << "pruefeUeberlappung(R1, R2) = " << pruefeUeberlappung(*pR1, *pR2) << endl;
+	cout << "pruefeUeberlappung(R2, R1) = " << pruefeUeberlappung(*pR1, *pR2) << endl;
 
 	
+}
+
+bool pruefeUeberlappung(CRechteck& RA, CRechteck& RB)
+{
+	if (RA.getYmax() < RB.getYmin()|| RA.getYmin() > RB.getYmax()) {
+		return false;
+	}
+	if (RA.getXmax() < RB.getXmin() || RA.getXmin() > RB.getXmax()) {
+		return false;
+	}
+	return true;
 }
